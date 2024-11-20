@@ -48,9 +48,11 @@ def redact(fullPhrase, redactedLetters):
     print(f"Number of letters redacted: {numOfRedact}")
     return redactedString
 
+#Output the redacted phrase
 def outputPhrase(r):
     print(f"Redacted phrase: {r}\n")
 
+#Call all of my functions here
 def main():
     fullPhrase, redactedLetters = userInput()
     r = redact(fullPhrase, redactedLetters).capitalize()
