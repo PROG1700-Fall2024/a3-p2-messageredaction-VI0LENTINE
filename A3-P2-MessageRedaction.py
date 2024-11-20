@@ -6,6 +6,8 @@
 #Student Name: Valentine Byrnes 
 
     # YOUR CODE STARTS HERE, each line must be indented (one tab)
+
+#Get user input: phrase, redactions (& make sure their phrase/redactions are valid in their separate contexts)
 def userInput():
     fullPhrase = []
     fullPhrase = input("Type a phrase (or quit to exit program): ").lower()
@@ -37,6 +39,7 @@ def userInput():
         return main()
     return fullPhrase, redactedLetters
 
+#Redact the requested letters from the phrase and count the number of redacted letters
 def redact(fullPhrase, redactedLetters):
     redactedString = fullPhrase
     for letter in redactedLetters:
